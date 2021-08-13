@@ -1,1 +1,2 @@
-# MAKINA
+# MAster KINase Activity
+
