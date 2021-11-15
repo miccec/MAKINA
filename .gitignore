@@ -1,0 +1,14 @@
+.DS_Store
+.Rhistory
+script.R
+otherData/CPTAC_GBM_activityMat.RData 
+otherData/CPTAC_GBM_aDEA_activityMat.RData 
+otherData/CPTAC_GBM_baggingNet.RData 
+otherData/CPTAC_GBM_groups.RData 
+otherData/CPTAC_GBM_kinPPnet_50perc_ccor.RData 
+otherData/CPTAC_GBM_kinPPnet_50perc.RData 
+otherData/CPTAC_GBM_netReg_kinPPtab.RData 
+otherData/CPTAC_GBM_phosphoProteomics.RData 
+otherData/CPTAC_GBM_proteomics.RData 
+otherData/kinaseTab_fromPSP.RData 
+otherData/known_kinases_substrates.RData 
