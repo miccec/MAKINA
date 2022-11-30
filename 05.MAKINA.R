@@ -11,11 +11,12 @@ load("RData/CPTAC_GBM_phosphoProteomics.RData", verbose = T)
 load("RData/CPTAC_GBM_groups.RData", verbose = T)
 cs <- intersect(names(groups), colnames(Phospho_Proteome))
 groups <- groups[cs]
-Phospho_Proteome <- Phospho_Proteome[, cs]
-Phospho_Proteome <- t(apply(Phospho_Proteome, 1, function(x) (x - mean(x))/sd(x)))
 
 means <- rowMeans(Phospho_Proteome)
 means <- sort(means, decreasing = T)
+
+Phospho_Proteome <- Phospho_Proteome[, cs]
+Phospho_Proteome <- t(apply(Phospho_Proteome, 1, function(x) (x - mean(x))/sd(x)))
 
 library(Hmisc)
 nBins <- 25
