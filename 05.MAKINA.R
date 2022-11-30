@@ -24,7 +24,6 @@ cuts <- as.numeric(cut2(means, m = m))
 names(cuts) <- names(means)
 
 nNullGenes <- 100
-set.seed(1234)
 nullGenes <- lapply(netReg, function(kin) unique(unlist(lapply(kin, function(gg) sample(names(cuts)[cuts == cuts[gg]], size = nNullGenes)))))
 
 activityMat <- matrix(0, nrow = length(netReg), ncol = ncol(Phospho_Proteome))
