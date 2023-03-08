@@ -26,7 +26,7 @@ kinaseTab <- cbind(kinaseTab, site2 = paste0(kinaseTab$SUB_GENE, "-", kinaseTab$
 # Predict unknown interactions for each boot
 library(doMC)
 library(kernlab)
-dir.create("RData/ksvmFit")
+dir.create("RData/kinPPnet")
 
 boot <- 100
 
